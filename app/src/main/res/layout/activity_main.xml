@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shetechs.shetechs.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/ms_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="background"
+        app:srcCompat="@drawable/bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/ms_bulb"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/idea" />
+
+    <TextView
+        android:id="@+id/ms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lit"
+        android:textColor="#FFFFFF"
+        android:textSize="85sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/ms_subtitle"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ms_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="LADIES IN TECHNOLOGY"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/ms_sign_up"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/ms_sign_up"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/ms_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_border"
+        android:elevation="10dp"
+        android:text="SIGN UP"
+        android:textColor="#F77062"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ms_login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/rounded_border"
+        android:text="LOG IN"
+        android:textColor="#F77062"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ms_sign_up" />
+
+
+</RelativeLayout>
