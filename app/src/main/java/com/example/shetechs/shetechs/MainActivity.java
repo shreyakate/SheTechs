@@ -60,8 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
         mSignUp.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                mConditionTextView.setText("Foggy");
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent signUpActivity = new Intent(MainActivity.this,
+                        SignUpActivity.class);
+                startActivity(signUpActivity);
             }
         });
     }

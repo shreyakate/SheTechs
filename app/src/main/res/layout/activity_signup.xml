@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shetechs.shetechs.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/p_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="background"
+        app:srcCompat="@drawable/bg" />
+
+    <ImageView
+        android:id="@+id/p_profile"
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/idea" />
+
+    <TextView
+        android:id="@+id/p_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp"
+        android:text="lit"
+        android:textColor="#FFFFFF"
+        android:textSize="85sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/su_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linkedin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="LADIES IN TECHNOLOGY"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/linkedin"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/gmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_border"
+        android:elevation="10dp"
+        android:text="Linkedin"
+        android:textColor="#F77062"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/gmail"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_alignStart="@+id/linkedin"
+        android:layout_above="@+id/other"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_border"
+        android:text="gmail"
+        android:textColor="#F77062"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/other"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="220dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/gmail"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_border"
+        android:text="other"
+        android:textColor="#F77062"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
