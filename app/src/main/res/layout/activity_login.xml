@@ -60,7 +60,6 @@
         android:elevation="10dp"
         android:hint="Username"
         android:inputType="textAutoComplete"
-        android:text="Email ID"
         android:textColor="#F77062"
         android:textSize="25sp"
         android:textStyle="bold" />

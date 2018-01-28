@@ -41,32 +41,19 @@ public class MainActivity extends AppCompatActivity {
         mLogIn = (Button) findViewById(R.id.ms_login);
         //mConditionTextView = (TextView) findViewById(R.id.conditionTextView);
 
-    }
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-
-        mLogIn.setOnClickListener(new View.OnClickListener(){
+        mSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent logInActivity = new Intent(MainActivity.this,
-                        LoginActivity.class);
-                startActivity(logInActivity);
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             }
         });
 
-        mSignUp.setOnClickListener(new View.OnClickListener(){
+        mLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-                Intent signUpActivity = new Intent(MainActivity.this,
-                        SignUpActivity.class);
-                startActivity(signUpActivity);
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
+
     }
 }
